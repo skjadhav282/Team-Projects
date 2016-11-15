@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BaseFile</title>
+<link rel="stylesheet" type="text/css" href="Css/renderList.css">
+<link rel="stylesheet" type="text/css" href="Css/renderForm.css">
+	<script type="text/javascript"src="Libraries/JqueryLib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="javascript/validateForm.js"></script>
+	<script type="text/javascript" src="javascript/renderForm.js"></script>
+	<script type="text/javascript" src="javascript/renderList.js"></script>	
+	<script type="text/javascript" src="javascript/header.js"></script>
+
+</head>
+<body onload="checkSessiontimeout();" onmousemove="resetSession();">
+
+<div id="titleDiv">
+			<script type="text/javascript">
+				renderTitle();
+			</script>
+			<div id= "UserInfoDiv"></div>		
+		</div>
+<hr>
+
+	<div id=maindiv>    
+			<div id = "header"></div>
+		<script type="text/javascript">
+			getJsonObj();
+		</script>
+	</div>	
+</body>
+</html>

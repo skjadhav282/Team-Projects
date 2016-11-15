@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="Css/myStyle.css">
+<script type="text/javascript" src="javascript/header.js"></script>
+<script type="text/javascript"
+	src="Libraries/JqueryLib/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="javascript/renderList.js"></script>
+<script type="text/javascript" src="javascript/validateForm.js"></script>
+<title>Login Page</title>
+</head>
+<body>
+	<div id="bodydiv">
+		<div id="titleDiv">
+			<script type="text/javascript">
+				renderTitle();
+			</script>
+		</div>
+		<hr>
+		<div id="logindiv">
+			<h1>Log-in</h1><br>
+			<form method="POST" action="Controller">
+				<input type="text" name="loginId" id="LoginId" placeholder="Enter Your UserId" onblur="validateLoginId()">
+				<span id="userIdSpan"></span>				
+				<input type="password" id="password" name="password" placeholder="Enter Your Password">
+				<span id="passwordSpan"></span>
+				 
+				<input type="hidden" name="action" value="login" id="action">
+				<input type="submit" value="LOGIN  >>>" id="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

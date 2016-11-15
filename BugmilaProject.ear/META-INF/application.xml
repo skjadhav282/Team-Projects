@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application>
+
+  <display-name>bugmila</display-name>
+  <description>bugmila</description>
+
+  <module>
+    <web>
+      <web-uri>BugmilaProject.war</web-uri>
+      <context-root>BugmilaProject</context-root>
+    </web>
+  </module>
+</application>

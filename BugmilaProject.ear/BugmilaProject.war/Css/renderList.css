@@ -1,0 +1,239 @@
+body{
+font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+
+#a_obj_list_table{
+
+	border-collapse: collapse;
+	 cellspacing:10px;
+	 padding:5px;
+	 width:100%;
+	 height:50%;
+	
+}
+
+#messageDiv {
+	margin-top: 10%;
+	font-size: 180%;
+	margin-left:25%;
+	color: DarkSlateBlue;
+	
+}
+
+tr{
+		height:40pt;
+}
+
+tr:nth-child(odd){
+	background-color:LightSteelBlue;
+
+}
+
+ tr:nth-child(even){
+	background-color:Lavender;
+
+} 
+
+td{
+	text-align:center;
+}
+
+
+
+#titleDiv{
+	font-size: 180%;	
+}
+
+h2{
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	color : DarkSlateBlue;
+}
+
+
+#UserInfoDiv{
+	
+	position: relative;
+	display: inline-block;
+	float:right;
+	margin-right:5%;
+}
+
+
+#menu2{	
+	width: 40px;
+	margin-top:-290%;
+	cursor: pointer;
+}
+
+
+#menu1
+{
+	margin-top:-130%;
+	display:none;
+	width:560%;
+	right:0;
+	position: absolute;	
+	box-shadow:0px 8px 16px 0px;
+	
+}
+
+
+#UserInfoDiv:HOVER #menu1{
+	display:block;
+} 
+
+#button,#DefectList,#AddDefect,#AddUser{
+	border-radius:10%;
+	width:10%;
+    background-color: #4CAF50;
+	background-color:DarkSlateBlue;
+    border: none;
+    color: white;
+    padding:1.5% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:95%;
+    cursor: pointer;
+    margin-bottom:0.5%;
+    margin-left:0.5%;
+   
+}
+
+#titleLogo{
+	height:132px;
+	width:362px;
+}
+
+#back{
+	width:12%;
+	margin-bottom:0.5%;
+    margin-left:0.5%;
+    cursor:pointer;
+	
+}
+
+#SubmitDefect,#return,#SubmitUser{
+	border-radius:10%;
+	width:30%;
+	height:110%;	
+	background-color:DarkSlateBlue; 
+    border: none;
+    color: white;
+    padding:1.5% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:70%;
+    cursor: pointer;
+    margin-bottom:0.5%;
+    margin-left:0.2%;
+}
+
+#logout{
+	border-radius:10%;
+	width:50%;
+	height:150%;
+	background-color:DarkSlateBlue;
+    border: none;
+    color: white;
+    padding:1.5% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:40%;
+    cursor: pointer;
+    margin-bottom:0.5%;
+    margin-left:0.2%;	
+}
+
+#menu1{
+	background-color:LightSteelBlue;
+}
+
+
+#header{
+	width=100%;
+}
+
+#sortingBar{
+	position: relative;
+	display: inline-block;
+	float:left;
+ 	margin-right:1%;
+	height:28px;
+	
+}
+
+#sortingImageDiv{
+	width: 40px;
+	margin-top: 10px;
+	cursor: pointer;
+	
+}
+
+#sortingOption{
+	background-color:LightSteelBlue;
+	margin-top:auto;
+	display:none;
+	width:180px;
+	position: absolute;	
+	box-shadow:0px 8px 16px 0px;
+}
+
+
+ #sortingBar:HOVER #sortingOption{
+	display:block;
+} 
+
+#sortingImage{	
+	height:50px;	
+} 
+
+.OptionsForSort{
+	cursor: pointer;
+	height:30px;
+	padding-left:15px;
+	text-align:justify;	
+}
+
+#searchBar,#searchLogoDiv{
+	float:right;
+	margin-top:1%;
+}
+
+#searchBar{
+	display:none;
+}
+#searchImage{
+	cursor:pointer;
+	height: 2%;
+    width: 70%;
+    margin-left: 10%;
+}
+#searchBox{
+	display:inline-block;
+	border-radius: 25px;
+    margin-top: 4%;
+}
+
+
+
+#filterImage{
+	float:right;
+	cursor:pointer; 	   
+    margin-top: 1%;
+}	
+
+
+#filterSubOption,#filterOption{
+	width:auto;
+	border-radius:5%;
+} 
+
+#filterDiv{
+	display:none;
+	border-radius: 25px;
+    margin-top:1%;
+    float:right;
+}

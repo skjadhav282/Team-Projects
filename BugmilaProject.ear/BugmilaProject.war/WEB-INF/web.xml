@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<display-name>Welcome to JBoss</display-name>
+	<description>
+		Welcome to JBoss
+	</description>
+	<servlet>
+		<servlet-name>Controller</servlet-name>
+		<servlet-class>com.bugmila.controller.Controller</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ExceptionHandler</servlet-name>
+		<servlet-class>com.bugmila.ErrorHandling.ExceptionHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Controller</servlet-name>
+		<url-pattern>/Controller</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ExceptionHandler</servlet-name>
+		<url-pattern>/ExceptionHandler</url-pattern>
+	</servlet-mapping>
+
+	<!-- error-code related error pages -->
+	<error-page>
+		<error-code>400</error-code>
+		<location>/ExceptionHandler</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>401</error-code>
+		<location>/ExceptionHandler</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/ExceptionHandler</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/ExceptionHandler</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>403</error-code>
+		<location>/ExceptionHandler</location>
+	</error-page>
+
+
+	<!-- exception-type related error pages -->
+	<error-page>
+		<exception-type>
+			javax.servlet.ServletException
+		</exception-type>
+		<location>/ExceptionHandler</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.io.IOException</exception-type>
+		<location>/ExceptionHandler</location>
+	</error-page>
+
+</web-app>

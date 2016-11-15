@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- Written to assume that classpath is rooted in the current directory. -->
+<!-- So this should be OK if you make this script in the root of a filesystem. -->
+<!-- If not, you may prefer to adjust the basedir, or move some directories around. -->
+<!-- The idea is that both Ant and NetBeans have to know what the package root is -->
+<!-- for the classes in your application. -->
+
+<project name="CopyDirectory" basedir="." default="CopyDirectory">
+	<target name="GlobalInit">
+		<property name="SourceDirectory" value="D:\digite\eclipse\workspace\digite\bin"/>
+		<property name="DestinationDirectory" value="D:\digite\jboss\server\digite\deploy\digite-all.ear"/>
+	</target>
+	<target name="CopyDirectory_old" depends = "GlobalInit">
+		<delete file="${DestinationDirectory}\all-classes.jar"/>
+		<jar jarfile="${DestinationDirectory}\all-classes.jar" compress="true" basedir="${SourceDirectory}" includes="**/*.class"/>	
+	</target>
+	<target name="CopyDirectory" depends = "GlobalInit">
+		<copy todir="${DestinationDirectory}">
+			<fileset dir="${SourceDirectory}">
+				<include name="**/*.class"/>
+			</fileset>
+		</copy>
+	</target>
+</project>
